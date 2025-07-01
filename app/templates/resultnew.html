@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Revenue Prediction Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="result-container">
+        <span class="success-icon"></span>
+        
+        <div class="result-header">
+            <h2>Prediction Complete</h2>
+            <p class="result-description">AI analysis has calculated your movie's box office potential</p>
+        </div>
+
+        <div class="revenue-display">
+            <div class="revenue-label">Predicted Revenue (in Millions) </div>
+            <div class="revenue-amount">{{ prediction }}</div>
+        </div>
+
+        <div class="prediction-stats">
+            <div class="stat-item">
+                <div class="stat-value">95.2%</div>
+                <div class="stat-label">Confidence</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">AI</div>
+                <div class="stat-label">Powered</div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <a href="/" class="btn btn-primary">
+                 New Prediction
+            </a>
+            <a href="#" class="btn btn-secondary" onclick="window.print(); return false;">
+                 Export Results
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const particlesContainer = document.querySelector('.particles');
+            for (let i = 0; i < 25; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+
+            setTimeout(() => {
+                createCelebrationBurst();
+            }, 1500);
+        });
+
+       
+    </script>
+</body>
+</html>

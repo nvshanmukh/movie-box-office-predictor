@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Revenue Predictor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2></h2>
+            <p>Harness AI to predict box office success</p>
+        </div>
+        <form class="prediction-form" action="/predict" method="post">
+            <div class="input-group">
+                <label for="budget"> Budget (in millions)</label>
+                <input type="number" name="budget" step="0.01" placeholder="e.g. 150" required>
+            </div>
+            <div class="input-group">
+                <label for="genres"> Genre</label>
+                <select name="genres" required>
+                    <option disabled selected>Select a genre</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Thriller</option>
+                    <option>Science Fiction</option>
+                    <option>Romance</option>
+                    <option>Horror</option>
+                    <option>Family</option>
+                    <option>Animation</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="popularity"> Popularity Score</label>
+                <input type="number" name="popularity" step="0.01" placeholder="e.g. 65.4" required>
+            </div>
+            <div class="input-group">
+                <label for="runtime"> Runtime (minutes)</label>
+                <input type="number" name="runtime" placeholder="e.g. 120" required>
+            </div>
+            <div class="input-group">
+                <label for="vote_average"> Average Rating</label>
+                <input type="number" name="vote_average" step="0.1" placeholder="e.g. 7.5" required>
+            </div>
+            <div class="input-group">
+                <label for="vote_count"> Total Votes</label>
+                <input type="number" name="vote_count" placeholder="e.g. 1500" required>
+            </div>
+            <div class="input-group">
+                <label for="director"> Director</label>
+                <select name="director" required>
+                    <option disabled selected>Select a director</option>
+                    <option>James Cameron</option>
+                    <option>Steven Spielberg</option>
+                    <option>Christopher Nolan</option>
+                    <option>Peter Jackson</option>
+                    <option>Ridley Scott</option>
+                    <option>Michael Bay</option>
+                    <option>Quentin Tarantino</option>
+                    <option>Tim Burton</option>
+                    <option>Clint Eastwood</option>
+                    <option>Zack Snyder</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="release_month"> Release Month (1-12)</label>
+                <input type="number" name="release_month" min="1" max="12" placeholder="e.g. 6" required>
+            </div>
+            <div class="input-group">
+                <label for="release_DOW"> Release Day (0=Mon, 6=Sun)</label>
+                <input type="number" name="release_DOW" min="0" max="6" placeholder="e.g. 5" required>
+            </div>
+            <button type="submit" class="submit-btn" onclick="this.classList.add('loading')">
+                 Predict Revenue
+            </button>
+        </form>
+    </div>
+
+    <script>
+ 
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input, select');
+            
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'translateY(-2px)';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'translateY(0)';
+                });
+            });
+
+
+        });
+    </script>
+</body>
+</html>
