@@ -23,17 +23,6 @@
             <div class="revenue-amount">{{ prediction }}</div>
         </div>
 
-        <div class="prediction-stats">
-            <div class="stat-item">
-                <div class="stat-value">95.2%</div>
-                <div class="stat-label">Confidence</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value">AI</div>
-                <div class="stat-label">Powered</div>
-            </div>
-        </div>
-
         <div class="action-buttons">
             <a href="/" class="btn btn-primary">
                  New Prediction
@@ -45,23 +34,6 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const particlesContainer = document.querySelector('.particles');
-            for (let i = 0; i < 25; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 20 + 's';
-                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
-                particlesContainer.appendChild(particle);
-            }
-
-            setTimeout(() => {
-                createCelebrationBurst();
-            }, 1500);
-        });
-
-       
     </script>
 </body>
 </html>

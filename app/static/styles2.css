@@ -1,4 +1,5 @@
-* {
+      
+      * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -18,7 +19,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated background elements */
         body::before {
             content: '';
             position: fixed;
@@ -39,7 +39,6 @@
             100% { opacity: 0.6; transform: scale(1.1); }
         }
 
-        /* Floating particles */
         .particles {
             position: fixed;
             top: 0;
@@ -66,7 +65,6 @@
             100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
         }
 
-        /* Main Container */
         .result-container {
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(20px);
@@ -118,7 +116,6 @@
             50% { opacity: 1; }
         }
 
-        /* Success Icon */
         .success-icon {
             font-size: 80px;
             margin-bottom: 30px;
@@ -131,7 +128,6 @@
             50% { transform: translateY(-15px) scale(1.1); }
         }
 
-        /* Header Styling */
         .result-header h2 {
             font-family: 'Orbitron', monospace;
             font-size: 36px;
@@ -171,7 +167,6 @@
             }
         }
 
-        /* Revenue Display */
         .revenue-display {
             background: rgba(255, 255, 255, 0.05);
             border: 2px solid rgba(120, 219, 255, 0.3);
@@ -245,7 +240,6 @@
             }
         }
 
-        /* Action Buttons */
         .action-buttons {
             display: flex;
             gap: 20px;
@@ -322,7 +316,6 @@
             transform: translateY(-1px) scale(1.01);
         }
 
-        /* Stats Section */
         .prediction-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -355,7 +348,6 @@
             letter-spacing: 1px;
         }
 
-        /* Responsive Design */
         @media (max-width: 600px) {
             .result-container {
                 padding: 40px 25px;
@@ -389,7 +381,6 @@
             }
         }
 
-        /* Focus indicators for accessibility */
         .btn:focus-visible {
             outline: 3px solid rgba(120, 119, 198, 0.8);
             outline-offset: 3px;
