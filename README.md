@@ -49,11 +49,10 @@ This app runs locally via Flask. For a publicly hosted version, consider deployi
 └── requirements.txt
 
 
-
 ---
 
 ##  How to Run Locally
-```
+
 ### 1. Clone the Repository
 git clone https://github.com/yourusername/movie-box-office-predictor.git
 cd movie-box-office-predictor
@@ -82,12 +81,12 @@ Visit http://127.0.0.1:5000 in your browser to use the app.
 📊 Prediction Result Page
 ![Result](prediction.png)
 
-
+---
 ## 📚 Data Source
 
 [TMDB 5000 Movie Dataset on Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 
-
+---
 
 🙋‍♂️ Author
 Shanmukh Venkata Nutulapati
