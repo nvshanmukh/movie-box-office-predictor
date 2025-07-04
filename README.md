@@ -36,16 +36,27 @@ This app runs locally via Flask. For a publicly hosted version, consider deployi
 ## 📁 Project Structure
 
 📦 movie-box-office-predictor
+
 ├── app.py
+
 ├── model_movies.pkl
+
 ├── scaler_movies.pkl
+
 ├── label_encoders.pkl
+
 ├── templates/
+
 │ ├── Demo2.html
+
 │ └── resultnew.html
+
 ├── static/
+
 │ └── styles.css
+
 ├── README.md
+
 └── requirements.txt
 
 
