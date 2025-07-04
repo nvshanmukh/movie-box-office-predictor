@@ -48,13 +48,12 @@ This app runs locally via Flask. For a publicly hosted version, consider deployi
 ├── README.md
 └── requirements.txt
 
-
-
 ---
 
-##  How to Run Locally
+## How to Run Locally
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/yourusername/movie-box-office-predictor.git
 cd movie-box-office-predictor
@@ -72,16 +71,16 @@ run the ipynb file
 cd app
 python app.py
 
-Visit http://127.0.0.1:5000 in your browser to use the app. 
+Visit http://127.0.0.1:5000 in your browser to use the app.
 
 
 📷 Screenshots
 
 🏠 Homepage
-![Homepage](/app/static/homepage.png)
+![Homepage](homepage.png)
 
 📊 Prediction Result Page
-![Result](/app/static/prediction.png)
+![Result](prediction.png)
 
 
 ## 📚 Data Source
@@ -102,3 +101,4 @@ Sekharamahanthi Sai Yeshwin
 Ritesh Kandra Reddy
 📧 Email: riteshkandra.reddy2022@vitstudent.ac.in
 🔗 GitHub: https://github.com/Ritesh1147
+```
