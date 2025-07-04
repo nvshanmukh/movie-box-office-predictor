@@ -46,6 +46,7 @@ This app runs locally via Flask. For a publicly hosted version, consider deployi
 │   └── resultnew.html
 ├── static/
 │   └── styles.css
+│   └── styles2.css
 ├── README.md
 └── requirements.txt
 </pre>
@@ -90,16 +91,16 @@ Then open http://127.0.0.1:5000 in your browser to access the app.
 
 TMDB 5000 Movie Dataset on Kaggle
 
-🙋‍♂️ Authors
+## 👨‍💻 Authors
 
-Shanmukh Venkata Nutulapati
-📧 nvshanmukh28@gmail.com
-🔗 GitHub: nvshanmukh
+- **Shanmukh Venkata Nutulapati**  
+  📧 [nvshanmukh28@gmail.com](mailto:nvshanmukh28@gmail.com)  
+  🔗 [GitHub: nvshanmukh](https://github.com/nvshanmukh)
 
-Sekharamahanthi Sai Yeshwin
-📧 saiyeshwin@gmail.com
-🔗 GitHub: saiyeshwin
+- **Sekharamahanthi Sai Yeshwin**  
+  📧 [saiyeshwin@gmail.com](mailto:saiyeshwin@gmail.com)  
+  🔗 [GitHub: saiyeshwin](https://github.com/saiyeshwin)
 
-Ritesh Kandra Reddy
-📧 riteshreddy147@gmail.com
-🔗 GitHub: Ritesh1147
+- **Ritesh Kandra Reddy**  
+  📧 [riteshreddy147@gmail.com](mailto:riteshreddy147@gmail.com)  
+  🔗 [GitHub: Ritesh1147](https://github.com/Ritesh1147)
