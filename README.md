@@ -14,91 +14,89 @@ This app runs locally via Flask. For a publicly hosted version, consider deployi
 
 ## 📊 Features
 
-- Predicts movie revenue using linear regression.
-- Inputs include budget, genre, popularity, rating, votes, director, and release date.
-- Clean, modern user interface.
-- Feature scaling using `StandardScaler`.
-- Encodes categorical data like `genres` and `director`.
-- Full visualization support (EDA + Feature Importance).
+- 🎯 Predicts movie revenue using a Linear Regression model
+- 📝 Inputs include budget, genre, popularity, rating, votes, director, and release date
+- 🧼 Feature scaling with `StandardScaler`
+- 🔣 Encodes categorical features like `genres` and `director`
+- 🎨 Clean, modern user interface using HTML/CSS
+- 📈 Visualizations for data analysis and feature importance
 
 ---
 
 ## 🧠 Tech Stack
 
 - **Backend:** Flask, Python
-- **ML:** Scikit-learn, Linear Regression
+- **Machine Learning:** Scikit-learn (Linear Regression)
 - **Frontend:** HTML5, CSS3, Bootstrap
 - **Data:** TMDB 5000 Movie Dataset
-- **Visualization:** Seaborn, Matplotlib, WordCloud
+- **Visualization:** Matplotlib, Seaborn, WordCloud
 
 ---
 
 ## 📁 Project Structure
 
+<pre>
 📦 movie-box-office-predictor
 ├── app.py
 ├── model_movies.pkl
 ├── scaler_movies.pkl
 ├── label_encoders.pkl
 ├── templates/
-│ ├── Demo2.html
-│ └── resultnew.html
+│   ├── Demo2.html
+│   └── resultnew.html
 ├── static/
-│ └── styles.css
+│   └── styles.css
 ├── README.md
 └── requirements.txt
-
+</pre>
 
 ---
 
-##  How to Run Locally
+## 🛠️ How to Run Locally
 
 ### 1. Clone the Repository
+
+```bash
 git clone https://github.com/yourusername/movie-box-office-predictor.git
 cd movie-box-office-predictor
 
-### 2. Create and Activate Virtual Environment
-python -m venv venv
-source venv/bin/activate        # On macOS/Linux
-venv\Scripts\activate           # On Windows
+2. Create and Activate Virtual Environment
 
-### 3. Install Dependencies
+python -m venv venv
+# For macOS/Linux:
+source venv/bin/activate
+# For Windows:
+venv\Scripts\activate
+
+3. Install Dependencies
+
 pip install -r requirements.txt
 
-### 3. Run the codes
-run the ipynb file
-cd app
+4. Run the Flask App
+
 python app.py
 
-Visit http://127.0.0.1:5000 in your browser to use the app. 
-
-
+Then open http://127.0.0.1:5000 in your browser to access the app.
 📷 Screenshots
 
 🏠 Homepage
-![Homepage](homepage.png)
+Homepage
 
 📊 Prediction Result Page
-![Result](prediction.png)
+Result
+📚 Data Source
 
----
-## 📚 Data Source
-
-[TMDB 5000 Movie Dataset on Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
-
----
-
-🙋‍♂️ Author
-
+TMDB 5000 Movie Dataset on Kaggle
+🙋‍♂️ Authors
 
 Shanmukh Venkata Nutulapati
-📧 Email: nvshanmukh28@gmail.com
-🔗 GitHub: https://github.com/nvshanmukh
+📧 nvshanmukh28@gmail.com
+🔗 GitHub: nvshanmukh
 
 Sekharamahanthi Sai Yeshwin
-📧 Email: saiyeshwin@gmail.com
-🔗 GitHub: https://github.com/saiyeshwin
+📧 saiyeshwin@gmail.com
+🔗 GitHub: saiyeshwin
 
 Ritesh Kandra Reddy
-📧 Email: riteshkandra.reddy2022@vitstudent.ac.in
-🔗 GitHub: https://github.com/Ritesh1147
+📧 riteshkandra.reddy2022@vitstudent.ac.in
+🔗 GitHub: Ritesh1147
