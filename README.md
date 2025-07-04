@@ -87,9 +87,10 @@ Then open http://127.0.0.1:5000 in your browser to access the app.
 📊 **Prediction Result Page**  
 ![Result](prediction.png)
 
-📚 Data Source
+## 📚 Data Source
 
-TMDB 5000 Movie Dataset on Kaggle
+[TMDB 5000 Movie Dataset on Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+
 
 ## 👨‍💻 Authors
 
