@@ -77,16 +77,19 @@ pip install -r requirements.txt
 python app.py
 
 Then open http://127.0.0.1:5000 in your browser to access the app.
-📷 Screenshots
+```
+## 📷 Screenshots
 
-🏠 Homepage
-Homepage
+🏠 **Homepage**  
+![Homepage](homepage.png)
 
-📊 Prediction Result Page
-Result
+📊 **Prediction Result Page**  
+![Result](prediction.png)
+
 📚 Data Source
 
 TMDB 5000 Movie Dataset on Kaggle
+
 🙋‍♂️ Authors
 
 Shanmukh Venkata Nutulapati
@@ -98,5 +101,5 @@ Sekharamahanthi Sai Yeshwin
 🔗 GitHub: saiyeshwin
 
 Ritesh Kandra Reddy
-📧 riteshkandra.reddy2022@vitstudent.ac.in
+📧 riteshreddy147@gmail.com
 🔗 GitHub: Ritesh1147
