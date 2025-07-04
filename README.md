@@ -53,7 +53,7 @@ This app runs locally via Flask. For a publicly hosted version, consider deployi
 ---
 
 ##  How to Run Locally
-
+```
 ### 1. Clone the Repository
 git clone https://github.com/yourusername/movie-box-office-predictor.git
 cd movie-box-office-predictor
